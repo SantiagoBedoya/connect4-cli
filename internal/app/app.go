@@ -26,6 +26,7 @@ type Game struct {
 
 // Start listen keyboard events and take action
 func (g *Game) Start() {
+	clearCMD()
 	tty, err := tty.Open()
 	if err != nil {
 		log.Fatal(err)
