@@ -32,7 +32,7 @@ func (g *Game) Start() {
 	for {
 		fmt.Printf("Player %d is playing...\n", g.PlayerToggle)
 		fmt.Println("(a: left, d: right, w: up, s: down, spacebar: mark slot)")
-		fmt.Printf("Moves: %d\n", g.Moves)
+		fmt.Println()
 		g.PrintBoard()
 		if g.ExistWinner {
 			break
