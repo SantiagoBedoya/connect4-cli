@@ -7,7 +7,7 @@ Execute go file
 ```bash
 make start
 
-// or
+# or
 
 go run cmd/main.go
 ```
