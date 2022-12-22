@@ -42,11 +42,11 @@ func (g *Game) Start() {
 			isP1Winner := g.VerifyBoard(1)
 			isP2Winner := g.VerifyBoard(2)
 			if isP1Winner {
-				g.Message = "Player 1 is winner"
+				g.Message = "Player 1 is the winner"
 				g.ExistWinner = true
 			}
 			if isP2Winner {
-				g.Message = "Player 2 is winner"
+				g.Message = "Player 2 is the winner"
 				g.ExistWinner = true
 			}
 		}
@@ -62,7 +62,7 @@ func (g *Game) VerifyBoard(player int) bool {
 	} else {
 		char = "o"
 	}
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 6; i++ {
 		for j := 0; j < 4; j++ {
 			if g.Matrix[i][j] == char &&
 				g.Matrix[i][j+1] == char &&
