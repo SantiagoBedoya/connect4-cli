@@ -73,7 +73,7 @@ func (g *Game) VerifyBoard(player int) bool {
 		}
 	}
 	for i := 0; i < 3; i++ {
-		for j := 0; j < 6; j++ {
+		for j := 0; j < 7; j++ {
 			if g.Matrix[i][j] == char &&
 				g.Matrix[i+1][j] == char &&
 				g.Matrix[i+2][j] == char &&
